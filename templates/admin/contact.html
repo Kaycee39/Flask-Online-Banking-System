@@ -1,0 +1,21 @@
+<html>
+<title>register</title>
+<p>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-group m-5">
+            {{form.name.label()}}
+           {{form.name(class="form-control")}}
+        </div>
+        <div class="form-group m-5">
+            {{form.email.label()}}
+            {{form.email(class="form-control")}}
+        </div >
+        <div class="form-group m-5">
+            {{form.message.label()}}
+            {{form.message(class="form-control")}}
+        </div>
+        {{form.send(class="btn-lg btn-primary m-5")}}
+    </form>
+</p>    
+</html>
